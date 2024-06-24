@@ -6,5 +6,5 @@ Task 1 - Anoymous function task :
 Task 1 - IIFE task : 
   Added 8 html files (separate file for each task )
 
-Task 2 -Arrow function task : (Task2_ArrowFunction.html)
+Task 2 -Arrow function task : 
   Added 5 html files (separate file for each task )
