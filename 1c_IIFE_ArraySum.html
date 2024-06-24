@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title> 
+            IIFE
+        </title>
+    </head>
+    <body>
+        <h1><center>1c. IIFE : </center></h1>
+        
+           <h2> 1c. Sum of all numbers in an array </h2>
+           <h3> Please check "Console" for the output</h3>
+       
+        <script>
+            
+          var inputArray = [1,2,3,4,5];
+          var resultArray = [];
+          var sum = 0;
+
+              (function(arr){
+
+                for(var i=0;i<arr.length;i++)
+                {
+                  sum = sum + arr[i] ;
+                }
+
+                console.log("Input Array : ", inputArray);
+                console.log("Sum of all numbers in the array : ", sum);
+
+              })(inputArray);
+
+             
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title> 
+            Arrow Function
+        </title>
+    </head>
+    <body>
+        <h1><center>1b. Arrow Function : </center></h1>
+        
+           <h2> 1b. Convert all the string to title caps in a string array </h2>
+           <h3> Please check "Console" for the output</h3>
+       
+        <script>
+            
+          console.log("1b. Convert all the string to title caps in a string array");
+          var inputString = "welcome to guvi technology!!";
+          var strArray = inputString.split(" ");
+          resultArray = [];
+
+              result = (strArr) => {
+
+                for(var i=0;i<strArr.length;i++)
+                {
+                resultArray.push( strArr[i].charAt(0).toUpperCase() + strArr[i].substring(1,strArr[i].length).toLowerCase());
+                }
+
+                var resultString = resultArray.join(" ");
+
+                return resultString;
+
+              };
+
+          console.log("Input string is              :", inputString);
+          console.log("Title Caps output string is  :", result(strArray));
+             
+        </script>
+    </body>
+</html>

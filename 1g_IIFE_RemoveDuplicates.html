@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title> 
+            IIFE
+        </title>
+    </head>
+    <body>
+        <h1><center>1g. IIFE : </center></h1>
+        
+           <h2> 1g. Remove duplicates from an array </h2>
+           <h3> Please check "Console" for the output</h3>
+       
+        <script>
+            
+          var inputArray = [1,2,2,"red","red","green"];
+          var resultArray = [];
+          resultArray.push(inputArray[0]);
+
+                  (function(arr){
+
+                    for(var i=1;i<arr.length;i++)
+                    {
+                      if(!resultArray.includes(arr[i]))
+                      {
+                        resultArray.push(arr[i]);
+                      }
+                    }
+
+                  })(inputArray);
+
+          console.log("Input Array  : ", inputArray);
+          console.log("Output Array after removing Duplicates : ", resultArray);
+
+        </script>
+    </body>
+</html>

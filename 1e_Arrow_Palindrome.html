@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title> 
+            Arrow Function
+        </title>
+    </head>
+    <body>
+        <h1><center>1e. Arrow Function : </center></h1>
+        
+           <h2> 1e. Return all the palindrome in an array </h2>
+           <h3> Please check "Console" for the output</h3>
+       
+        <script>
+            
+         var inputArray = ["civic","random","level","cello","Noon"];
+         var resultArray = [];
+
+              result = (arr) => {
+
+                for(var i=0;i<arr.length;i++)
+                {
+
+                  var revStr = arr[i].split('').reverse().join("");
+
+                  if(arr[i].toLowerCase()===revStr.toLowerCase())
+                  {
+                    resultArray.push(arr[i]);
+                  }
+                  
+                }
+                
+                return resultArray;
+
+              };;
+          
+          console.log("Input String Array : ", inputArray);    
+          console.log("Output String Array with Palindromes : ", result(inputArray));    
+
+
+        </script>
+    </body>
+</html>

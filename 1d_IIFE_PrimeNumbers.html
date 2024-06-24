@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title> 
+            IIFE
+        </title>
+    </head>
+    <body>
+        <h1><center>1d. IIFE : </center></h1>
+        
+           <h2> 1d. Return all the prime numbers in an array </h2>
+           <h3> Please check "Console" for the output</h3>
+       
+        <script>
+            
+          var inputArray = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+          var resultArray = [];
+
+              (function(arr){
+
+                for(var i=0;i<arr.length;i++)
+                {
+                  var number = arr[i];
+
+                  if(number>1)
+                  {
+                    var isPrime = true;
+                    for(var j=2;j<number;j++)
+                    {
+                      if(number%j==0)
+                      {
+                        isPrime = false;
+                        break;
+                      }
+                    }
+                  }
+
+                  if(isPrime==true)
+                  {
+                    resultArray.push(arr[i]);
+                  }
+                }
+
+                console.log("Input Array : ", inputArray);
+                console.log("Prime numbers in the array : ", resultArray);
+
+              })(inputArray);
+        </script>
+    </body>
+</html>

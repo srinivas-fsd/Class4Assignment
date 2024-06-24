@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title> 
+            Anonymous Function
+        </title>
+    </head>
+    <body>
+        <h1><center>1a. Anonymous Function : </center></h1>
+        
+           <h2> 1a. Print odd numbers in an array </h2>
+           <h3> Please check "Console" for the output</h3>
+       
+        <script>
+            
+          var inputArray = [1,2,3,4,5,6,7,8,9,10];
+          var resultArray = [];
+          var result;
+
+              result = function(arr){
+
+                for(var i=0;i<arr.length;i++)
+                {
+                    if(arr[i]%2==1)
+                    {
+                        resultArray.push(arr[i]);
+                    }
+                }
+
+                return resultArray;
+
+              };
+
+          console.log("Input Array : ", inputArray);    
+          console.log("Output Array with Odd numbers : ", result(inputArray));
+             
+        </script>
+    </body>
+</html>

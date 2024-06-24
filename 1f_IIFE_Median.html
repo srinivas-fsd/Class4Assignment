@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title> 
+            IIFE
+        </title>
+    </head>
+    <body>
+        <h1><center>1f. IIFE : </center></h1>
+        
+           <h2> 1f.Return median of two sorted arrays of the same size </h2>
+           <h3> Please check "Console" for the output</h3>
+    
+        <script>
+            
+          var arr1 = [1,2,3,4,5];
+          var arr2 = [6,7,8,9,10];
+          var combinedArray = new Float64Array(arr1.concat(arr2)); 
+          combinedArray =  combinedArray.sort();
+
+          var median=(function(combinedArray){
+
+                var length = combinedArray.length;
+                var middle = Math.floor(length / 2);
+                
+                var medianValue = (combinedArray[middle - 1] + combinedArray[middle]) / 2;
+                
+                console.log("Array 1 : ",arr1);
+                console.log("Array 2 : ",arr2);
+                console.log("Combined Array : ", combinedArray);
+
+                return medianValue;
+
+              })(combinedArray);
+
+              console.log("Median of 2 sorted arrays is : ", median);
+                  
+        </script>
+    </body>
+</html>
